@@ -21,6 +21,7 @@ module.exports = function (grunt) {
     app: 'app',
     dist: 'dist'
   };
+  var pkg = require('./package.json');
 
   // Define the configuration for all the tasks
   grunt.initConfig({
@@ -67,6 +68,34 @@ module.exports = function (grunt) {
         ]
       }
     },
+	
+  buildcontrol: {
+		options: {
+		  dir: 'dist',
+		  commit: true,
+		  push: true,
+		  message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+		},
+	pages: {
+		  options: {
+			remote: 'git@github.com:andrewjgb/aburns.tk.git',
+			branch: 'gh-pages'
+		  }
+		},
+		heroku: {
+		  options: {
+			remote: 'git@heroku.com:example-heroku-webapp-1988.git',
+			branch: 'master',
+			tag: pkg.version
+		  }
+		},
+		local: {
+		  options: {
+			remote: '../',
+			branch: 'build'
+		  }
+		}
+	  },	
 
     // The actual grunt server settings
     connect: {
@@ -376,8 +405,7 @@ module.exports = function (grunt) {
       ]
     }
   });
-
-
+  
   grunt.registerTask('serve', 'start the server and preview your app, --allow-remote for remote access', function (target) {
     if (grunt.option('allow-remote')) {
       grunt.config.set('connect.options.hostname', '0.0.0.0');
@@ -437,4 +465,5 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
 };
