@@ -81,19 +81,6 @@ module.exports = function (grunt) {
 			remote: 'git@github.com:andrewjgb/aburns.tk.git',
 			branch: 'gh-pages'
 		  }
-		},
-		heroku: {
-		  options: {
-			remote: 'git@heroku.com:example-heroku-webapp-1988.git',
-			branch: 'master',
-			tag: pkg.version
-		  }
-		},
-		local: {
-		  options: {
-			remote: '../',
-			branch: 'build'
-		  }
 		}
 	  },	
 
