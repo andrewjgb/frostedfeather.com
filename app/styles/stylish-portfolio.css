@@ -22,21 +22,25 @@ body {
     vertical-align: middle;
 }
 
-.title-aburns {
-	font-family: 'Euphoria Script', cursive;
+.title-title {
+	font-family: 'Lato', cursive;
 	font-weight: 400;
 }
 
-.title-tk {
-	font-family: 'Francois One', sans-serif;
-	font-weight: 400;
+.title-svg {
+	width: 200px;
+	padding-bottom: 20px;
 }
+
+/* .title-box {
+	background: none;
+} */
 
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
-    font-size: 4.5em;
-    font-weight: 700;
+    font-size: 3em;
+    font-weight: 400;
 }
 
 /* Custom Button Styles */
@@ -161,6 +165,7 @@ hr.small {
 /* Header */
 
 .header {
+	padding-top: 50px;
     display: table;
     position: relative;
     width: 100%;
@@ -170,6 +175,10 @@ hr.small {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.header-box {
+	border-style: style;
 }
 
 /* About */

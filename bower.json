@@ -4,6 +4,7 @@
   "dependencies": {
     "modernizr": "~2.8.2",
     "fontawesome": "~4.2.0",
-    "jquery": "~2.1.1"
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.3.1"
   }
 }
