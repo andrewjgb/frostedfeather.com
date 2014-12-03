@@ -22,28 +22,36 @@ body {
     vertical-align: middle;
 }
 
-.title-aburns {
-	font-family: 'Euphoria Script', cursive;
+.title-title {
+	font-family: 'Lato', cursive;
 	font-weight: 400;
 }
 
-.title-tk {
-	font-family: 'Francois One', sans-serif;
-	font-weight: 400;
+.title-svg {
+	width: 200px;
+	padding-bottom: 20px;
 }
+
+/* .title-box {
+	background: none;
+} */
 
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
-    font-size: 4.5em;
-    font-weight: 700;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+a	{
+	color: #a0ded6;
 }
 
 /* Custom Button Styles */
 
 .btn-dark {
     border-radius: 0;
-    color: #fff;
+    color: #a0ded6;
     background-color: rgba(0,0,0,0.4);
 }
 
@@ -161,6 +169,7 @@ hr.small {
 /* Header */
 
 .header {
+	padding-top: 50px;
     display: table;
     position: relative;
     width: 100%;
@@ -170,6 +179,10 @@ hr.small {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.header-box {
+	border-style: style;
 }
 
 /* About */
@@ -182,10 +195,15 @@ hr.small {
 
 .services {
     padding: 50px 0;
+	background: #a0ded6;
 }
 
 .service-item {
     margin-bottom: 30px;
+}
+
+.text-primary {
+	color: #a0ded6;
 }
 
 /* Callout */
