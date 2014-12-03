@@ -43,11 +43,15 @@ body {
     font-weight: 400;
 }
 
+a	{
+	color: #a0ded6;
+}
+
 /* Custom Button Styles */
 
 .btn-dark {
     border-radius: 0;
-    color: #fff;
+    color: #a0ded6;
     background-color: rgba(0,0,0,0.4);
 }
 
@@ -191,10 +195,15 @@ hr.small {
 
 .services {
     padding: 50px 0;
+	background: #a0ded6;
 }
 
 .service-item {
     margin-bottom: 30px;
+}
+
+.text-primary {
+	color: #a0ded6;
 }
 
 /* Callout */
