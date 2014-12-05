@@ -17,7 +17,7 @@ body {
 }
 
 .text-vertical-center {
-    display: table-cell;
+/*     display: table-cell; */
     text-align: center;
     vertical-align: middle;
 }
@@ -32,9 +32,13 @@ body {
 	padding-bottom: 20px;
 }
 
-/* .title-box {
+.title-box {
 	background: none;
-} */
+	color: #a0ded6;
+	border-style: solid;
+	border-width: 10px;
+	border-radius: 0px;
+}
 
 .text-vertical-center h1 {
     margin: 0;
