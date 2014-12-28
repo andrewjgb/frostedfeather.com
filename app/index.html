@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Frosted Feather | Freelance Marketing Services </title>
-    <meta name="description" content="">
+    <meta name="description" content="Social media, SEO and marketing freelancer for small Bristol based businesses. Inspired by sustainability, fashion and yoga.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/favicon.ico">
@@ -20,10 +20,27 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
-	<link href='http://fonts.googleapis.com/css?family=Lato|Roboto|Euphoria+Script|Francois+One|Source+Sans+Pro:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+	<!-- <link href='http://fonts.googleapis.com/css?family=Lato|Roboto|Euphoria+Script|Francois+One|Source+Sans+Pro:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'> -->
 
   </head>
   <body>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1536407796600467',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
   <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
@@ -71,6 +88,7 @@
 						<a href="http://twitter.com/frosted_feather" class="btn btn-dark btn-lg"><i class="fa fa-twitter fa-fw fa-1x"></i></a>
 					</li>
 				</ul>
+				<div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div>
 			  </div>
 			</div>	
 		</div>
